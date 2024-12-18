@@ -108,15 +108,13 @@ namespace Oxide.Plugins
 
             string message = string.Join(" ", arg.Args).Trim();
 
-            // Check if message should be blocked
             if (ShouldBlockMessage(message))
                 return false;
 
-            // Format and broadcast the message
             string formattedMessage = FormatMessage(message);
             Server.Broadcast(formattedMessage, config.ChatIcon);
 
-            return false; // Block default message
+            return false; 
         }
 
         #endregion
@@ -128,7 +126,6 @@ namespace Oxide.Plugins
             if (string.IsNullOrEmpty(message))
                 return false;
 
-            // Check gave commands
             if (config.BlockGaveCommands && message.ToLower().Contains("gave"))
                 return true;
 
