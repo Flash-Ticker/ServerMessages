@@ -28,7 +28,7 @@ The **ServerMessages** plugin for Rust allows server administrators to format an
 This plugin does not require any special authorizations as it is based on the standard server commands. Commands are blocked by configuration, not by permissions.
 
 ## Config: 
-`
+```
 {
   "Chat Icon (SteamID64)": 0,
   "Block 'gave' Commands (true/false)": true,
@@ -41,7 +41,7 @@ This plugin does not require any special authorizations as it is based on the st
     "ChatFormat": "{title}: {message}"
   }
 }
-`
+```
 
 ## More Free Plugins:
 If you are looking for more useful free plugins, please have a look at my Discord, you only have to choose the Flash role when you join.
